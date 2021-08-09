@@ -1,0 +1,31 @@
+[
+   { 
+       "player_id":1,
+    "name":"David Johnson",
+    "attributes":{
+        "role":"BAT",
+        "type":"RHB"
+    },
+    "skills":{
+        "bat":{
+            "rating":7,
+            "shot_selection":56,
+            "power":66,
+            "control":48
+        },
+        "bowl":{
+            "rating":3,
+            "line_length":21,
+            "variation":13,
+            "accuracy":15
+        },
+        "wkt":{
+            "rating":2,
+            "reflex":5,
+            "atheletism":3,
+            "awareness":5
+        }
+    }
+    
+}
+]
