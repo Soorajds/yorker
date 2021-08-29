@@ -17,9 +17,9 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('age');
-            $table->string('batting-style');
-            $table->string('bowling-style');
-            $table->string('net-worth');
+            $table->string('batting_style');
+            $table->string('bowling_style');
+            $table->string('net_worth');
             $table->timestamps();
         });
     }

@@ -24,9 +24,9 @@ class PlayerSeeder extends Seeder
         $PlayerId = Player::insertGetId([
             'name' => 'player - '.$i,
             'age' => rand(16,36),
-            'batting-style' => Arr::random($batting_style),
-            'bowling-style' => Arr::random($bowling_style),
-            'net-worth' => 20000,
+            'batting_style' => Arr::random($batting_style),
+            'bowling_style' => Arr::random($bowling_style),
+            'net_worth' => 20000,
 
         ]);
         Stats::insert([

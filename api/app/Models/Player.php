@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Player extends Model
 {
     use HasFactory;
-    protected $fillable=['name','age','batting-style','bowling-style','net-worth'];
+    protected $fillable=['name','age','batting_style','bowling_style','net_worth'];
 }
