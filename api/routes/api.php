@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\StatsController;
+use App\Http\Controllers\GameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/players/list', [PlayerController::class, 'list']);
-Route::get('/players/detail/{playerId}', [PlayerController::class, 'playerDetail']);
+Route::get('/players/list/{teamId}', [PlayerController::class, 'list']);
+Route::get('/teams/detail/{teamId}', [PlayerController::class, 'playerDetail']);
+Route::get('/players/detail/{playerId}', [StatsController::class, 'show']);
+Route::get('/match/start/{playerId}', [GameController::class, 'start']);
 
