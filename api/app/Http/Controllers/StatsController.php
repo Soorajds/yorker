@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class StatsController extends Controller
 {
     public function show($playerId){
-        $Player = Stats::where('players_id','=',$playerId)
+        $Player = Stats::where('player_id','=',$playerId)
         ->get();
         return response()->json(['data' => $Player],200);
      }
